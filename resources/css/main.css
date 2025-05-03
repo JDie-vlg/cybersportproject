@@ -1,0 +1,92 @@
+/*body{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+.header{
+    display: flex;
+}
+
+/*.header:before {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    height: 1px; */
+/*    background: yellow; */
+/*    width: 150px; */
+/*    margin: 0 auto 10px; */
+/*}*/
+
+/*.header:after {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    height: 1px; */
+/*    background: yellow; */
+/*    width: 150px; */
+/*    margin: 0 auto 10px; */
+/*}*/
+
+.settings-bar{
+    display: flex;
+    width: 100%;
+    background-color: #4a5568;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+}
+
+.user-bar{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.main-block{
+    width: 1200px;
+    background-color: #2d3748;
+}
+
+.navigation-bar{
+    min-width: 100%;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*justify-content: space-around;*/
+}
+
+.nav-bar{
+    min-width: 100%;
+    display: flex;
+    /*justify-content: center;*/
+    justify-content: space-around;
+}
+
+.navigation-bar>ul>li>a{
+    color: white;
+}
+
+ul,li{
+    list-style: none;
+    display: inline-block;
+}
+
+.streams-block>div>p{
+    color: white;
+}
+
+.news-block-title>p{
+    color: white;
+}
+
+
+
+
+.bottom{
+    display: flex;
+}
