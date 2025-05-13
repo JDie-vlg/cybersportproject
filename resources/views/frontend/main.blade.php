@@ -99,14 +99,15 @@
                 @foreach($news as $new)
                     <div class="news-block-mini">
                         <div class="news-block-image"><img src=""></div>
-                        <div class="news-block-content">
+                        <div class="news-mini-block-content">
                             <div class="news-block-title"><a href="{{route('news.show', $new->id)}}">{{$new->title}}</a></div>
                             <div class="news-block-text"><a href="{{route('news.show', $new->id)}}">{{$new->text}}</a></div>
                             <div class="news-block-autor"><a href="{{route('news.show', $new->id)}}">{{$new->user_id}}</a></div>
                             <div class="news-block-bottom">
-                                <div class="news-block-views"></div>
+                                <div class="news-block-views">count</div>
                                 <div class="news-block-game"><a href="{{route('news.show', $new->id)}}">{{$new->category_id}}</a></div>
-                                <div class="news-block-date"><a href="{{route('news.show', $new->id)}}">{{$new->published_at}}</a></div>
+{{--                                <div class="news-block-date"><a href="{{route('news.show', $new->id)}}">{{$new->published_at}}</a></div>--}}
+                                <div class="news-block-date"><a href="{{route('news.show', $new->id)}}">{{date('d.m.y H:m', strtotime($new->published_at))}}</a></div>
                             </div>
                         </div>
                     </div>
