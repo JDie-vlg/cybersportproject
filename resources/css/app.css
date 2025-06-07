@@ -1,2 +1,5 @@
 @import "main.css";
 @import "bootstrap/scss/bootstrap.scss";
+
+
+@import "admin/adminlte.css";

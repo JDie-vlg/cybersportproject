@@ -82,13 +82,25 @@
                     <p>СТРИМЫ</p>
                 </div>
                 <div class="streams-block-content">
-                    <div>
+{{--                    <div class="streams-block-mini">--}}
 {{--                        @foreach($streams as $stream)--}}
-{{--                            <div>--}}
-{{--                                <a href="{{route('$stream.show', $stream->id)}}">{{$stream->title}}</a>--}}
-{{--                            </div>--}}
+                            <div class="stream-items">
+                                <a href="#">
+                                    <div class="stream-item">
+                                        <img class="stream-image" src="">
+                                        <div class="stream-item-top">
+                                            <div class="stream-title col-8">Название тестовое чтобы проверить как будет выглядеть</div>
+                                            <div class="stream-game col-2">game</div>
+                                        </div>
+                                        <div class="stream-item-bottom">
+                                            <div class="stream-viewers col-2">зрил</div>
+                                            <div class="stream-nick col-2">ник</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
 {{--                        @endforeach--}}
-                    </div>
+{{--                    </div>--}}
                 </div>
             </div>
             <div class="news-block">
@@ -98,11 +110,11 @@
                 <div class="news-block-content">
                 @foreach($news as $new)
                     <div class="news-block-mini">
-                        <div class="news-block-image"><img src=""></div>
+                        <div class="news-block-image"><img src="{{asset($new->image)}}"></div>
                         <div class="news-mini-block-content">
                             <div class="news-block-title"><a href="{{route('news.show', $new->id)}}">{{$new->title}}</a></div>
                             <div class="news-block-text"><a href="{{route('news.show', $new->id)}}">{{$new->text}}</a></div>
-                            <div class="news-block-autor"><a href="{{route('news.show', $new->id)}}">{{$new->user_id}}</a></div>
+                            <div class="news-block-author"><a href="{{route('news.show', $new->id)}}">{{$new->user_id}}</a></div>
                             <div class="news-block-bottom">
                                 <div class="news-block-views">count</div>
                                 <div class="news-block-game"><a href="{{route('news.show', $new->id)}}">{{$new->category_id}}</a></div>
